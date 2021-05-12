@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+html{
+    scroll-behavior: smooth;
+}  
+body{
+    font-family: 'Zen Dots', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+header{
+background-size: cover;
+background-position: center center;
+width: 100vw;
+height: 100vh;
+display:flex;
+flex-wrap: wrap;
+}
+#fondo{
+    background-image: url(../img/Control.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+#fondo::before{
+    content:´´;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0) ;
+}
+.imgLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgLogo img{
+    width: 100px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.imgLogo img:hover{
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
+a{
+    text-decoration:none;
+    color:chartreuse;
+}
+a li.actived{
+    background:rgb(0, 0, 255, 0.664);
+    color: chartreuse;
+    padding: 0 5px 0 5px;  
+}
+a:hover>li{
+    background:rgb(0, 0, 255, 0.664);
+    color:chartreuse;
+    border-radius: 5px;
+    padding: 0 5px 0 5px;
+}
+nav{
+    padding: 0 100px;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color:chartreuse;
+    background: rgb(0, 0, 0, 0.411);
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin-left: 20px;
+    color:chartreuse;
+    transition: 0.5s ease-in-out;
+}
+.bodyHeader{
+width: 100%;
+display: flex;
+padding: 0 100px;
+color:chartreuse;
+position: relative;
+align-items: center;
+top: -10%;
+}
+.titleBox{
+    width: 50%;
+    background:rgb(0, 0, 0, 0.411);
+}
+.titleHeader{
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: 0;
+    color: white;
+}
+.titleDescription{
+    margin: 20px 0 0 0;
+    padding: 10px;
+}
+.btn-header{
+    margin-top: 20px;
+    outline: 0;
+    border: 0px;
+    width: 150px;
+    height: 50px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background:rgba(0, 0, 255, 0.664);
+    color:chartreuse;
+    transition: 0.5s;
+}
+.btn-header:hover{
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
+.imgBox{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.imgBox img{
+    position: absolute;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid chartreuse;
+    transition: 0.5s ease-in-out;
+}
+.imgBox img:hover{
+    transform: scale(1.1);
+    filter: grayscale(100%);
+}
+.img-Groot{
+    width: 314px;
+    max-width: 314px;
+}
+.quienSoy{
+    width: 100vw;
+    display: flex;
+}
+.boxImgPerfil,.miDescripcion {
+    height: 100vh;
+    background:rgb(46, 46, 46);
+}
+.boxImgPerfil{
+    background-image: url(Proyecto/img/Groot.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no repeat;
+}
+.miDescripcion{
+    padding: 20px;
+    color:chartreuse;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.miDescripcion p.tituloBiografia{
+    font-weight: 1000;
+    color: white;
+}
+.miDescripcion h2.subBiografia{
+    font-size: 3rem;
+    line-height: 0px;
+}
+.btn-me{
+    margin-top: 20px;
+    outline: 0;
+    border: 0px;
+    width: 200px;
+    height: 50px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background:rgba(0, 0, 255, 0.664);
+    color:chartreuse;
+    transition: 0.5s;
+    line-height: 0px;
+}
+.btn-me:hover{
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
